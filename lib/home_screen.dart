@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Sensor-Werkzeugkasten'),
         actions: [
           IconButton(
-            tooltip: 'Ueber diese App',
+            tooltip: 'Über diese App',
             icon: const Icon(Icons.info_outline),
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (_) => const InfoScreen()),
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
               child: Text(
-                'Fuenf Werkzeuge, keine Werbung, kein Konto.',
+                'Fünf Werkzeuge, keine Werbung, kein Konto.',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
   Widget _buildTile(BuildContext context, _ToolTile tile) {
     return Semantics(
       button: true,
-      label: '${tile.label} oeffnen',
+      label: '${tile.label} öffnen',
       child: Card(
         clipBehavior: Clip.antiAlias,
         child: InkWell(

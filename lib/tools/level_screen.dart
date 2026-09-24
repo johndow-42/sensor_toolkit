@@ -105,9 +105,9 @@ class _LevelScreenState extends State<LevelScreen> {
   }
 
   Widget _buildLevel(BuildContext context, AccelerometerEvent event) {
-    // Roll: Neigung um die Laengsachse (relevant, wenn das Geraet aufrecht
+    // Roll: Neigung um die Längsachse (relevant, wenn das Gerät aufrecht
     // gehalten wird, klassische Wasserwaage). Pitch: Neigung nach vorn/hinten
-    // (relevant, wenn das Geraet flach liegt).
+    // (relevant, wenn das Gerät flach liegt).
     final rollDeg = math.atan2(event.y, event.z) * 180 / math.pi;
     final pitchDeg = math.atan2(-event.x, math.sqrt(event.y * event.y + event.z * event.z)) * 180 / math.pi;
 
@@ -166,7 +166,7 @@ class _LevelScreenState extends State<LevelScreen> {
         ),
         const AccuracyNotice(
           text:
-              'Der eingebaute Sensor ist werkseitig nie perfekt justiert. "Nullpunkt hier setzen" gleicht das fuer eine bekannt ebene Flaeche aus.',
+              'Der eingebaute Sensor ist werkseitig nie perfekt justiert. "Nullpunkt hier setzen" gleicht das für eine bekannt ebene Fläche aus.',
         ),
       ],
     );

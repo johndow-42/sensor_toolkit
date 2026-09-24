@@ -5,10 +5,10 @@ import 'package:flutter/services.dart';
 
 import '../widgets/accuracy_notice.dart';
 
-/// Eigene MethodChannel/EventChannel-Bruecke statt eines Drittanbieter-Pakets,
-/// siehe Begruendung in android/.../MainActivity.kt. Nur unter Android
+/// Eigene MethodChannel/EventChannel-Brücke statt eines Drittanbieter-Pakets,
+/// siehe Begründung in android/.../MainActivity.kt. Nur unter Android
 /// implementiert (Kanal existiert dort nicht -> PlatformException, wird als
-/// "nicht verfuegbar" behandelt, kein Absturz).
+/// "nicht verfügbar" behandelt, kein Absturz).
 class _LightSensorChannel {
   _LightSensorChannel._();
 
@@ -79,11 +79,11 @@ class _LightMeterScreenState extends State<LightMeterScreen> {
 
   String _qualitativeLabel(double lux) {
     if (lux < 1) return 'Nahezu dunkel';
-    if (lux < 50) return 'Daemmerlicht';
-    if (lux < 200) return 'Gedaempfte Zimmerbeleuchtung';
+    if (lux < 50) return 'Dämmerlicht';
+    if (lux < 200) return 'Gedämpfte Zimmerbeleuchtung';
     if (lux < 500) return 'Normale Zimmerbeleuchtung';
     if (lux < 2000) return 'Helle Arbeitsbeleuchtung';
-    if (lux < 10000) return 'Bewoelkter Tag im Freien';
+    if (lux < 10000) return 'Bewölkter Tag im Freien';
     if (lux < 50000) return 'Helles Tageslicht';
     return 'Direktes Sonnenlicht';
   }
@@ -135,7 +135,7 @@ class _LightMeterScreenState extends State<LightMeterScreen> {
         ),
         const AccuracyNotice(
           text:
-              'Handy-Lichtsensoren sind fuer die Bildschirmhelligkeit gedacht, nicht fuer Praezisionsmessungen. Werte sind Richtwerte.',
+              'Handy-Lichtsensoren sind für die Bildschirmhelligkeit gedacht, nicht für Präzisionsmessungen. Werte sind Richtwerte.',
         ),
       ],
     );

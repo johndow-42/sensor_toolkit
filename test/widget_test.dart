@@ -1,4 +1,4 @@
-// Smoke-Test: Startseite baut fehlerfrei und zeigt alle fuenf Werkzeuge.
+// Smoke-Test: Startseite baut fehlerfrei und zeigt alle fünf Werkzeuge.
 
 import 'dart:ui' as ui;
 
@@ -7,7 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:sensor_toolkit/main.dart';
 
 void main() {
-  testWidgets('Startseite zeigt alle fuenf Werkzeuge', (WidgetTester tester) async {
+  testWidgets('Startseite zeigt alle fünf Werkzeuge', (WidgetTester tester) async {
     // Grosse Testflaeche, damit alle Kacheln ohne Scrollen im Baum stehen
     // (GridView baut ausserhalb des sichtbaren Bereichs sonst nichts).
     tester.view.physicalSize = const ui.Size(800, 2000);

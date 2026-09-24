@@ -6,7 +6,7 @@ import '../widgets/accuracy_notice.dart';
 enum _Unit { mm, zoll }
 
 /// Bildschirm-Lineal. Flutters devicePixelRatio allein ergibt keine
-/// verlaessliche physische Groesse (siehe concept.md), deshalb Kalibrierung
+/// verlässliche physische Größe (siehe concept.md), deshalb Kalibrierung
 /// gegen ein bekanntes Referenzobjekt (Kreditkarte, 85,6 mm), Ergebnis lokal
 /// gespeichert.
 class RulerScreen extends StatefulWidget {
@@ -49,8 +49,8 @@ class _RulerScreenState extends State<RulerScreen> {
   }
 
   double _fallbackPxPerMm(BuildContext context) {
-    // Grobe Schaetzung ueber die logische Displaydichte, nur als Notloesung
-    // vor der ersten Kalibrierung. Nicht verlaesslich, siehe Hinweistext.
+    // Grobe Schätzung über die logische Displaydichte, nur als Notlösung
+    // vor der ersten Kalibrierung. Nicht verlässlich, siehe Hinweistext.
     final dpr = MediaQuery.of(context).devicePixelRatio;
     final assumedDpi = 160 * dpr;
     return assumedDpi / 25.4;
@@ -146,8 +146,8 @@ class _RulerScreenState extends State<RulerScreen> {
         ),
         AccuracyNotice(
           text: calibrated
-              ? 'Kalibriert gegen eine Scheckkarte. Gilt nur fuer diesen Bildschirm, nicht uebertragbar auf andere Geraete.'
-              : 'Noch nicht kalibriert, benutzt eine grobe Schaetzung. Tippe oben auf das Lineal-Symbol, um mit einer Scheckkarte zu kalibrieren.',
+              ? 'Kalibriert gegen eine Scheckkarte. Gilt nur für diesen Bildschirm, nicht übertragbar auf andere Geräte.'
+              : 'Noch nicht kalibriert, benutzt eine grobe Schätzung. Tippe oben auf das Lineal-Symbol, um mit einer Scheckkarte zu kalibrieren.',
         ),
       ],
     );

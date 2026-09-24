@@ -4,7 +4,7 @@ import 'package:csv/csv.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 
-/// Eine einzelne Messung mit Zeitstempel, unabhaengig vom Werkzeug.
+/// Eine einzelne Messung mit Zeitstempel, unabhängig vom Werkzeug.
 class TimedReading {
   TimedReading(this.timestamp, this.values);
 
@@ -14,11 +14,11 @@ class TimedReading {
   final Map<String, double> values;
 }
 
-/// Schreibt eine Messreihe als CSV und oeffnet den System-Teilen-Dialog.
+/// Schreibt eine Messreihe als CSV und öffnet den System-Teilen-Dialog.
 ///
 /// Kostenlos und ohne Konto nutzbar (Stand V1, siehe concept.md Abschnitt
-/// Monetarisierung, Option 3 ist fuer eine spaetere Version vorgesehen, nicht
-/// fuer diesen ersten Build).
+/// Monetarisierung, Option 3 ist für eine spätere Version vorgesehen, nicht
+/// für diesen ersten Build).
 class MeasurementExporter {
   MeasurementExporter._();
 
@@ -52,7 +52,7 @@ class MeasurementExporter {
       ShareParams(
         files: [XFile(file.path, mimeType: 'text/csv')],
         subject: '$toolName Messwerte',
-        text: '$toolName Messwerte, ${readings.length} Eintraege',
+        text: '$toolName Messwerte, ${readings.length} Einträge',
       ),
     );
   }

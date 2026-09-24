@@ -9,7 +9,7 @@ class InfoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Ueber diese App')),
+      appBar: AppBar(title: const Text('Über diese App')),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(20),
@@ -18,7 +18,7 @@ class InfoScreen extends StatelessWidget {
               icon: Icons.block,
               title: 'Keine Werbung',
               text:
-                  'Keine Banner, keine Vollbildwerbung, nichts, das die Bedienung oder den Zurueck-Button blockiert.',
+                  'Keine Banner, keine Vollbildwerbung, nichts, das die Bedienung oder den Zurück-Button blockiert.',
             ),
             _Point(
               icon: Icons.wifi_off,
@@ -29,13 +29,13 @@ class InfoScreen extends StatelessWidget {
             _Point(
               icon: Icons.no_accounts,
               title: 'Kein Konto',
-              text: 'Kein Login, keine Cloud. Alle Einstellungen bleiben nur auf diesem Geraet.',
+              text: 'Kein Login, keine Cloud. Alle Einstellungen bleiben nur auf diesem Gerät.',
             ),
             _Point(
               icon: Icons.rule,
               title: 'Ehrliche Genauigkeit',
               text:
-                  'Handy-Sensoren sind nicht geeicht. Jedes Werkzeug zeigt offen, wo die Grenzen liegen, statt Praezision vorzutaeuschen.',
+                  'Handy-Sensoren sind nicht geeicht. Jedes Werkzeug zeigt offen, wo die Grenzen liegen, statt Präzision vorzutäuschen.',
             ),
           ],
         ),

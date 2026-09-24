@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-/// Zentrales Theme. Bewusst hoher Kontrast, keine fixierten Schriftgroessen,
-/// die die System-Textskalierung ueberschreiben (siehe concept.md, Abschnitt
+/// Zentrales Theme. Bewusst hoher Kontrast, keine fixierten Schriftgrößen,
+/// die die System-Textskalierung überschreiben (siehe concept.md, Abschnitt
 /// Barrierefreiheit).
 class AppTheme {
   AppTheme._();

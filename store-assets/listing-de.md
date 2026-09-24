@@ -31,7 +31,8 @@ Werkzeuge (Tools)
 johndow42ai@gmail.com
 
 ## Datenschutzerklärung
-Siehe privacy-policy-de.md, gehostet unter (URL nach GitHub-Pages-Einrichtung ergänzen).
+https://johndow-42.github.io/sensor_toolkit/privacy-policy-de.html
+(Quelle: privacy-policy-de.md in diesem Ordner, veröffentlicht via docs/privacy-policy-de.html)
 
 ## Content-Rating-Hinweise
 Keine Werbung, keine In-App-Käufe (Stand V1), keine Nutzerinhalte, keine Standortdaten,

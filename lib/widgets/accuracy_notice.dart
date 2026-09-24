@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// dauerhaft sichtbar an (nicht wegklickbar versteckt), weil Transparenz ueber
 /// Sensorgrenzen ein Vertrauens-Differenzierungspunkt ist, siehe concept.md.
 /// Kein Popup, kein Dialog, blockiert also nie die Navigation oder den
-/// Zurueck-Button (siehe concept.md, "staerkster Befund").
+/// Zurück-Button (siehe concept.md, "staerkster Befund").
 class AccuracyNotice extends StatelessWidget {
   const AccuracyNotice({super.key, required this.text});
 
@@ -44,7 +44,7 @@ class AccuracyNotice extends StatelessWidget {
   }
 }
 
-/// Banner fuer "Sensor nicht verfuegbar auf diesem Geraet", statt Absturz.
+/// Banner für "Sensor nicht verfügbar auf diesem Gerät", statt Absturz.
 class SensorUnavailableNotice extends StatelessWidget {
   const SensorUnavailableNotice({super.key, required this.toolName});
 
@@ -61,13 +61,13 @@ class SensorUnavailableNotice extends StatelessWidget {
             const Icon(Icons.sensors_off, size: 48),
             const SizedBox(height: 12),
             Text(
-              '$toolName ist auf diesem Geraet nicht verfuegbar.',
+              '$toolName ist auf diesem Gerät nicht verfügbar.',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.titleMedium,
             ),
             const SizedBox(height: 6),
             Text(
-              'Dem Geraet fehlt vermutlich der noetige Sensor.',
+              'Dem Gerät fehlt vermutlich der nötige Sensor.',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyMedium,
             ),

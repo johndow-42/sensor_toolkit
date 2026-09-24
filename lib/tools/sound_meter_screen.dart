@@ -77,14 +77,14 @@ class _SoundMeterScreenState extends State<SoundMeterScreen> {
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Export nicht moeglich: $e')),
+        SnackBar(content: Text('Export nicht möglich: $e')),
       );
     }
   }
 
   @override
   void dispose() {
-    // Sicherstellen, dass das Mikrofon nie im Hintergrund weiterlaeuft, wenn
+    // Sicherstellen, dass das Mikrofon nie im Hintergrund weiterläuft, wenn
     // der Bildschirm verlassen wird (Vertrauens- und Datenschutzpunkt).
     _sub?.cancel();
     super.dispose();
@@ -109,7 +109,7 @@ class _SoundMeterScreenState extends State<SoundMeterScreen> {
             Expanded(child: Center(child: _buildBody(context))),
             const AccuracyNotice(
               text:
-                  'Handy-Mikrofone sind nicht geeicht. Die Werte sind Richtwerte, kein Ersatz fuer ein Messgeraet.',
+                  'Handy-Mikrofone sind nicht geeicht. Die Werte sind Richtwerte, kein Ersatz für ein Messgerät.',
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 16),
@@ -141,7 +141,7 @@ class _SoundMeterScreenState extends State<SoundMeterScreen> {
             const SizedBox(height: 12),
             OutlinedButton(
               onPressed: openAppSettings,
-              child: const Text('App-Einstellungen oeffnen'),
+              child: const Text('App-Einstellungen öffnen'),
             ),
           ],
         ),

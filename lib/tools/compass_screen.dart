@@ -27,8 +27,8 @@ class _CompassScreenState extends State<CompassScreen> {
       _unavailable = true;
       return;
     }
-    // Manche Geraete liefern den Stream, aber nie ein Ereignis, wenn der
-    // Sensor fehlt. Deshalb: kurze Wartezeit, danach als nicht verfuegbar
+    // Manche Geräte liefern den Stream, aber nie ein Ereignis, wenn der
+    // Sensor fehlt. Deshalb: kurze Wartezeit, danach als nicht verfügbar
     // einstufen, statt eine leere Anzeige endlos zu zeigen.
     _availabilityTimer = Timer(const Duration(seconds: 3), () {
       if (mounted && _event == null) {
@@ -51,8 +51,8 @@ class _CompassScreenState extends State<CompassScreen> {
   String _cardinal(double heading) {
     const dirs = [
       'Norden', 'Nordnordost', 'Nordost', 'Ostnordost',
-      'Osten', 'Ostsuedost', 'Suedost', 'Suedsuedost',
-      'Sueden', 'Suedsuedwest', 'Suedwest', 'Westsuedwest',
+      'Osten', 'Ostsüdost', 'Südost', 'Südsüdost',
+      'Süden', 'Südsüdwest', 'Südwest', 'Westsüdwest',
       'Westen', 'Westnordwest', 'Nordwest', 'Nordnordwest',
     ];
     final index = ((heading % 360) / 22.5).round() % 16;
@@ -125,12 +125,12 @@ class _CompassScreenState extends State<CompassScreen> {
         if (lowAccuracy)
           const AccuracyNotice(
             text:
-                'Geringe Genauigkeit erkannt. Bewege das Geraet einmal in einer liegenden Acht, um den Kompass neu zu kalibrieren.',
+                'Geringe Genauigkeit erkannt. Bewege das Gerät einmal in einer liegenden Acht, um den Kompass neu zu kalibrieren.',
           )
         else
           AccuracyNotice(
             text:
-                'Geschaetzte Abweichung: ±${accuracy.round()} Grad. Kompasse reagieren empfindlich auf Metall und Magnete in der Naehe.',
+                'Geschätzte Abweichung: ±${accuracy.round()} Grad. Kompasse reagieren empfindlich auf Metall und Magnete in der Nähe.',
           ),
       ],
     );
