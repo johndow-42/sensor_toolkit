@@ -1,4 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Nur fuer den Schallpegelmesser. Bewusst KEINE INTERNET-Berechtigung: das ist ein
+         sichtbares Vertrauenssignal im Play Store (siehe concept.md), die App kann technisch
+         nicht nach Hause telefonieren oder Werbung/Tracking laden. Nicht hinzufuegen, ohne
+         diese Entscheidung im Konzept zu revidieren. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <application
         android:label="sensor_toolkit"
         android:name="${applicationName}"

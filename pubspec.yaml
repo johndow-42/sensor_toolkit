@@ -34,6 +34,24 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  sensors_plus: ^7.1.0
+  flutter_device_compass: ^2.2.0
+  noise_meter: ^6.0.0
+  permission_handler: ^13.0.2
+  csv: ^8.0.0
+  path_provider: ^2.1.6
+  share_plus: ^13.3.0
+  shared_preferences: ^2.5.5
+
+# permission_handler_android 14.0.0+ verlangt compileSdkVersion 37 als reine
+# Ganzzahl, aber das Android-SDK kennt diesen Namen nicht mehr (nur noch
+# "37.0", "37.1" usw., neues Bruchzahl-Versionsschema). Build schlaegt sonst
+# fehl: "Failed to find target with hash string 'android-37'". Bis eine
+# Version erscheint, die das neue Namensschema kennt, bewusst auf die letzte
+# Version vor dem Sprung (13.0.1) gepinnt, verlangt nur compileSdkVersion 35,
+# das haben wir sauber installiert. Passt zur permission_handler-Fassade 13.0.2.
+dependency_overrides:
+  permission_handler_android: 13.0.1
 
 dev_dependencies:
   flutter_test:
