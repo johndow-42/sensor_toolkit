@@ -1,4 +1,4 @@
-package com.geldmaschine.sensor_toolkit
+package com.johndow42.sensortoolkit
 
 import android.content.Context
 import android.hardware.Sensor
